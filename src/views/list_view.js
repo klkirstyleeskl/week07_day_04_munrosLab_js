@@ -9,9 +9,9 @@ const ListView = function(container) {
 
 ListView.prototype.bindEvents = function () {
   PubSub.subscribe('Munro:munro-data-loaded', (event) => {
-     this.munro = event.detail;
-    this.render()
-  })
+      this.munro = event.detail
+     this.render()
+  });
 };
 
 ListView.prototype.render = function () {
@@ -21,6 +21,9 @@ ListView.prototype.render = function () {
     munroView.render();
   })
 };
+
+
+
 
 
 
